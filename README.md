@@ -1,4 +1,5 @@
-# KEA Organization Simple Object Access Protocol Web Service
+# KEA Organization SOAP Web Service
+Simple Object Access Protocol
 ## Repository Package Include
 * Database Schema Script
 * Source Code
