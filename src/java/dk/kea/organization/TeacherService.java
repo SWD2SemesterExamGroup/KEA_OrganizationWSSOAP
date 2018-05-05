@@ -30,7 +30,6 @@ public class TeacherService {
     @WebMethod(operationName = "CourseClassesDataBy")
     public TeacherEntityView getCourseClassesViewModelBy(@WebParam(name = "teacherID") int teacherID) {
         
-        
         return DbConnector.getInstance().getCourseClassListBy(teacherID);
     }
 
