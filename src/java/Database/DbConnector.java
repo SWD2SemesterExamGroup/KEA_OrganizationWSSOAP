@@ -62,7 +62,7 @@ public class DbConnector {
             System.out.println("Get Course Class List SQL Exception");
             eSQL.printStackTrace();
         } finally {
-            try {
+            /*try {
                 this.conn.close();
             } catch (SQLException eSQL) {
                 System.out.println("Get Course Class List SQL Exception\n" +
@@ -70,7 +70,7 @@ public class DbConnector {
                 eSQL.printStackTrace();
             } finally {
                 System.out.println("Data Retrieved");
-            }
+            }*/
         }
         
         // Transform List interfaces
