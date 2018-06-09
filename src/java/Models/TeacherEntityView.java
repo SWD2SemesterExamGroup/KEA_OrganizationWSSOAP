@@ -14,17 +14,14 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author lord_
  */
-
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TeacherEntityView implements Serializable {
 
     private int teacherID;
     private String teacherName;
-    
     @XmlElementWrapper
     private List<BaseCModel> courses;
-    
     public TeacherEntityView() {
         this.courses = new ArrayList<>();
     }
@@ -37,20 +34,23 @@ public class TeacherEntityView implements Serializable {
     public int getTeacherID() {
         return teacherID;
     }
-
     public void setTeacherID(int teacherID) {
         this.teacherID = teacherID;
     }
-
     public String getTeacherName() {
         return teacherName;
     }
-
     public void setTeacherName(String teacherName) {
         this.teacherName = teacherName;
     }
-
-    // Refactor implementation new code
+    public List<BaseCModel> getCourses() {
+        return courses;
+    }
+    public void setCourses(List<BaseCModel> courses) {
+        this.courses = courses;
+    }
+    
+// Refactor implementation new code
     public void addCourse(BaseCModel entity) {
         this.courses.add(entity);
     }
@@ -60,14 +60,6 @@ public class TeacherEntityView implements Serializable {
     }
     public void addClass(BaseCModel entity) {
         this.courses.add(entity);
-    }
-
-    public List<BaseCModel> getCourses() {
-        return courses;
-    }
-
-    public void setCourses(List<BaseCModel> courses) {
-        this.courses = courses;
     }
     
     @Override

@@ -10,7 +10,7 @@ public class TeacherUserModel extends DbUserAbstract {
 
     public TeacherUserModel() {
         super();
-        this.username = "teacher";
-        this.password = "pw1234";
+        this.username = "helbojensen_dk";
+        this.password = "lk4ndpwE";
     }
 }

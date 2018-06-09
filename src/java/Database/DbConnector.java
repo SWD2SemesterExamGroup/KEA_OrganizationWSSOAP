@@ -30,7 +30,7 @@ public class DbConnector {
         
         // Retrieve data from SQL
         try {
-            String sql = "select * from v_getcourseclasslist where TeacherID = ?;";
+            String sql = "select * from v_getCourseClassList where TeacherID = ?;";
             stmtPre = this.conn.prepareStatement(sql);
             stmtPre.setInt(1, teacherID);
 
@@ -61,16 +61,6 @@ public class DbConnector {
         } catch (SQLException eSQL) {
             System.out.println("Get Course Class List SQL Exception");
             eSQL.printStackTrace();
-        } finally {
-            /*try {
-                this.conn.close();
-            } catch (SQLException eSQL) {
-                System.out.println("Get Course Class List SQL Exception\n" +
-                                   "Closing Connection Exception");
-                eSQL.printStackTrace();
-            } finally {
-                System.out.println("Data Retrieved");
-            }*/
         }
         
         // Transform List interfaces

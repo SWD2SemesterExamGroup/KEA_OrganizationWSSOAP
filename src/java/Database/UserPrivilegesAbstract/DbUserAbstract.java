@@ -12,7 +12,8 @@ import Database.UserModels.TeacherUserModel;
  * @author lord_
  */
 public abstract class DbUserAbstract {
-    protected final String url = "jdbc:mysql://localhost:3306/KEA_Organization_DB";
+    //protected final String url = "jdbc:mysql://localhost:3306/KEA_Organization_DB";
+    protected final String url = "jdbc:mysql://mysql46.unoeuro.com:3306/helbojensen_dk_db2";
     protected String username, password;
 
     public String getUrl() {
